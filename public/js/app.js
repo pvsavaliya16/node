@@ -1,4 +1,3 @@
-console.log("Client JS file");
 
 const weatherForm = document.querySelector("form");
 const address = document.querySelector('#address');
@@ -13,7 +12,6 @@ msg2.textContent = ''
 weatherForm.addEventListener("submit", (e) => {
   e.preventDefault();
   msg1.textContent= 'Loading....'
-  console.log("Submitted");
   if (!address.value) {
       msg1.textContent = 'Please provide address';
       msg2.textContent = ''
